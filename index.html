@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="text-center px-auto">
+        <h1 class="text-6xl pt-12">Money Master</h1>
+    </header>
+    <section class="mt-10">
+        <div class="flex gap-20 justify-center">
+            <div class="w-2/5">
+                <img class="rounded" src="images/money-master.png" alt="">
+            </div>
+            <div class="bg-gray-100 py-10 px-20 rounded flex flex-col justify-center items-center">
+                <div>
+                    <h4 class="text-2xl font-medium text-center mb-5">Income</h4>
+                    <label for="income-field">Income:</label>
+                    <input id="income-field" class="bg-gray-300 rounded w-3/4 h-10" type="number" name="income-field" id="">
+                </div>
+                <div class="text-center">
+                    <h4 class="text-2xl font-medium text-center mb-5 mt-5">Expenses</h4>
+                    <label for="food-field">Food:</label>
+                    <input id="food-field" class="bg-gray-300 rounded mb-4 w-3/4 h-10" type="number" name="food-field" id="">
+                    <br>
+                    <label for="rent-field">Rent:</label>
+                    <input id="rent-field" class="bg-gray-300 rounded mb-4 w-3/4 h-10" type="number" name="rent-field" id="">
+                    <br>
+                    <label for="clothes-field">Clothes:</label>
+                    <input id="clothes-field" class="bg-gray-300 rounded w-3/4 h-10" type="number" name="clothes-field" id="">
+                </div>
+                <div class="mt-5 text-center">
+                    <button id="calculate-button" class="bg-cyan-500 text-white px-10 py-2 rounded">Calculate</button>
+                    <h3 class="text-2xl font-medium mt-5">Total Expenses: <span id="total-expense">00</span></h3>
+                    <h3 class="text-2xl font-medium mt-5 mb-6">Balance: <span id="balance">00</span></h3>
+                </div>
+                <div class="flex gap-4">
+                    <label for="saving-field">Save:</label>
+                    <input id="saving-field" class="bg-gray-300 rounded w-20 h-10" type="number" name="saving-field" id="">
+                    <p>%</p>
+                    <button id="save-button" class="bg-cyan-500 text-white px-4 rounded">Save</button>
+                </div>
+                <div class="mt-5 text-center">
+                    <h3 class="text-2xl font-medium mt-5">Saving Amount: <span id="saving-amount">00</span></h3>
+                    <h3 class="text-2xl font-medium mt-5 mb-6">Remaining Amount: <span id="remaining-amount">00</span></h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- js files -->
+    <script src="scripts/calculate.js"></script>
+</body>
+</html>
